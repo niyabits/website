@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: rgba(13, 110, 139, 0.75);
+  --secondary-color: rgba(229, 148, 0, 0.9);
+  --overlay-color: rgba(24, 39, 51, 0.85);
+  --menu-speed: 0.75s;
+}
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Lato');
+body {
+  font-family: 'Lato', arial, helvetica, sans-serif;
+}
+
+/* Navbar */
+
+nav li {
+  display: inline;
+}
+
+nav ul {
+  margin: 25px;
+  padding: 15px;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.6);
+  margin: 15px;
+}
+
+nav ul li a:hover {
+  color: rgba(0, 0, 0, 0.8);
+  transition: 0.4s;
+}
+
+/* The progress container (grey background) */
+.progress-container {
+  margin-top: 70px;
+  margin-left: 45px;
+  width: 260px;
+  height: 3px;
+  background: #d7d7d7;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 3px;
+  background: #e34c26;
+  width: 0%;
+}
+
+/* Main */
+#main {
+  height: 100vh;
+  font-size: 1.4em;
+}
+
+#main-center {
+  padding-top: 44vh;
+  padding-bottom: 44vh;
+}
+
+#email p {
+  display: inline;
+}
+
+#email i {
+  display: inline-block;
+  border-radius: 60px;
+  box-shadow: 0px 0px 2px #888;
+  padding: 0.5em 0.6em;
+  background-color: #317f3d;
+  color: white;
+  font-size: 0.8em;
+}
+
+#email {
+  position: absolute;
+  display: block;
+  float: right;
+  bottom: 5vh;
+  right: 50px;
+  z-index: 0;
+}
+
+#main a {
+  font-size: 17px;
+  color: #0060cc;
+  font-weight: 600;
+}
+
+#main h1 {
+  max-width: 277px;
+  margin: auto;
+  text-align: center;
+  padding: 15px;
+}
+
+#main h3 {
+  max-width: 277px;
+  margin: auto;
+  text-align: center;
+  padding: 15px;
+}
+
+#main p {
+  max-width: 277px;
+  margin: auto;
+  text-align: center;
+  padding: 15px;
+}
+
+#main h1 {
+  font-weight: 800;
+  color: rgba(0, 0, 0, 0.8);
+}
+#main h3 {
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+/* Fade Page on Load */
+
+#fader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    pointer-events: none;
+    background: white;
+    animation-duration: 300ms;
+    animation-timing-function: ease-in-out;        
+  }
+
+@keyframes fade-out {
+    from { opacity: 1 }
+      to { opacity: 0 }
+}
+
+@keyframes fade-in {
+    from { opacity: 0 }
+      to { opacity: 1 }
+}
+
+#fader.fade-out {
+    opacity: 0;
+    animation-name: fade-out;
+}
+
+#fader.fade-in {
+    opacity: 1;
+    animation-name: fade-in;
+}

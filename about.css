@@ -1,0 +1,81 @@
+/*About*/
+#about {
+  height: 100vh;
+  font-size: 1.4em;
+}
+
+.rotate {
+  position: relative;
+  top: 75vh;
+  left: 100px;
+  transform: rotate(-90deg);
+  transform-origin: left top;
+  font-size: 2.7em;
+  color: #0060cc;
+}
+
+.rotate-sm {
+  position: absolute;
+  right: -20vw;
+  top: 62vh;
+  transform: rotate(90deg);
+  transform-origin: right bottom;
+  font-size: 5em;
+  color: #e34c26;
+}
+
+#about-2 {
+  width: 35vw;
+  margin: auto;
+  margin-top: 100px;
+}
+
+#about-2 h1 {
+  color: rgba(0, 0, 0, 0.8);
+}
+#about-2 h4 {
+  color: rgba(0, 0, 0, 0.7);
+}
+#about-2 p {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+#html {
+  color: #e34c26;
+}
+#CSS {
+  color: #0070b7;
+}
+#JS {
+  color: #eca239;
+}
+#BS {
+  color: #7243a9;
+}
+#PHP {
+  color: #617cbf;
+}
+#react {
+  color: #3096ff;
+}
+
+#about-3 {
+  position: relative;
+}
+
+#about-3 img {
+  position: absolute;
+  right: 50px;
+  width: 20vw;
+  top: 4em;
+  z-index: 0;
+}
+
+#sm-txt {
+  font-size: 17px;
+  color: #0060cc;
+  font-weight: 600;
+  display: block;
+  max-width: 100px;
+  margin: auto;
+}

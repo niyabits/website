@@ -1,0 +1,47 @@
+@media only screen and (max-width: 768px) {
+  .rotate,
+  .rotate-sm {
+    display: none;
+  }
+
+  #about {
+    height: 100%;
+  }
+
+  #about-2 {
+    width: 87%;
+  }
+
+  #about-3 img {
+    display: block;
+    position: relative;
+    right: 0;
+    top: 4em;
+    padding-bottom: 35px;
+    margin: auto;
+  }
+
+  #d-nav {
+    display: none;
+  }
+
+  nav li {
+    display: list-item;
+  }
+
+  nav ul {
+    position: static;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .m-nav {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  #email p {
+    display: none;
+  }
+}

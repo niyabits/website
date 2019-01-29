@@ -1,0 +1,58 @@
+/* Social Media Section */
+#social {
+  position: relative;
+  height: 100vh;
+  max-width: 300px;
+  margin: auto;
+}
+
+#social i {
+  font-size: 1.2em;
+}
+
+#social p {
+  display: inline;
+}
+
+.social-el {
+  display: block;
+  margin: 25px 0;
+  padding: 20px;
+  background-color: black;
+  max-width: 300px;
+  border-radius: 100px;
+  color: white;
+}
+
+#social-middle {
+  padding: 30vh 0;
+}
+
+#social a {
+  text-decoration: none;
+}
+
+.fb {
+  background-color: #3b5998;
+}
+.twitter {
+  background-color: #55acee;
+}
+.ig {
+  background: linear-gradient(145deg, #3051f1 10%, #c92bb7 70%) no-repeat;
+}
+
+#social a:hover .fb {
+  background-color: #2a4887;
+  transition: 0.2s;
+}
+
+#social a:hover .twitter {
+  background-color: #449bdd;
+  transition: 0.2s;
+}
+
+#social a:hover .ig {
+  background: linear-gradient(145deg, #2040e0 10%, #d81aa6 70%) no-repeat;
+  transition: 0.2s;
+}
