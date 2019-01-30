@@ -1,8 +1,9 @@
 /*About*/
 #about {
+  position: relative;
   height: 100vh;
   font-size: 1.4em;
-  z-index: 1;
+  z-index: 3;
 }
 
 .rotate {
