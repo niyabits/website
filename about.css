@@ -2,6 +2,7 @@
 #about {
   height: 100vh;
   font-size: 1.4em;
+  z-index: 1;
 }
 
 .rotate {
@@ -14,14 +15,26 @@
   color: #0060cc;
 }
 
+.text-spectrum--k {
+  background: linear-gradient(80deg, #0060cc,#1098AD);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .rotate-sm {
   position: absolute;
   right: -20vw;
-  top: 62vh;
+  top: 100vh;
   transform: rotate(90deg);
   transform-origin: right bottom;
   font-size: 5em;
   color: #e34c26;
+}
+
+.text-spectrum--y {
+  background: linear-gradient(80deg, #e34c26, #D57311);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 #about-2 {
@@ -68,7 +81,7 @@
   right: 50px;
   width: 20vw;
   top: 4em;
-  z-index: 0;
+  z-index: 1;
 }
 
 #sm-txt {

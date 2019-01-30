@@ -10,21 +10,36 @@
       crossorigin="anonymous"
     />
 
-	<meta property="og:title" content="Yash Gupta | Website" />
-	<meta property="og:type" content="Personal Website" />
-	<meta property="og:image" content="/me.png" />
-	<meta property="og:url" content="yashgupta.surge.sh" />
-
     <link rel="stylesheet" href="menu.css" />
     <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="about.css" />
     <link rel="stylesheet" href="social.css" />
     <link rel="stylesheet" href="responsive.css" />
+    <link rel="stylesheet" href="popcorn.css" />
 
     <title>Yash Gupta</title>
+
+    <!-- Primary Meta Tags -->
+	<title>Yash Gupta | Website</title>
+	<meta name="title" content="Yash Gupta | Website">
+	<meta name="description" content="Hey there, I'm Yash and this is my personal website!!">
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="http://yashgupta.surge.sh/">
+	<meta property="og:title" content="Yash Gupta | Website">
+	<meta property="og:description" content="Hey there, I'm Yash and this is my personal website!!">
+	<meta property="og:image" content="/me.png">
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content="http://yashgupta.surge.sh/">
+	<meta property="twitter:title" content="Yash Gupta | Website">
+	<meta property="twitter:description" content="Hey there, I'm Yash and this is my personal website!!">
+	<meta property="twitter:image" content="/me.png">
   </head>
   <body>
-  	<svg id="fader">
+  	<!--<svg id="fader">-->
     <div class="menu-wrap">
       <nav id="top">
         <div id="d-nav">
@@ -46,11 +61,11 @@
         </div>
         <div class="m-nav">
           <input type="checkbox" class="toggler" />
-          <div class="hamburger"><div></div></div>
-          <div class="menu">
-            <div>
-              <div>
-                <ul>
+        	<div class="hamburger"><div></div></div>
+        <div class="menu">
+        <div>
+        <div>
+           	    <ul>
                   <li><a href="#top">Home</a></li>
                   <li><a href="#about">About</a></li>
                   <li><a href="#social" target="blank">Social Media</a></li>
@@ -65,27 +80,41 @@
                     <hr />
                   </li>
                 </ul>
-              </div>
-            </div>
           </div>
-        </div>
+          </div>
+          </div>
+    	</div>
       </nav>
       <div id="main">
-        <div id="main-center">
+        <div id="main-center" class="rellax" data-rellax-speed="-2">
           <h1>Yash Gupta</h1>
           <h3>Web Developer</h3>
           <p><a href="#about"> know me! </a></p>
         </div>
+        <div class="Earth">
+	        <div class="Earth-floaties position-absolute top-0 right-0 bottom-0 left-0 rellax" data-rellax-speed="-13">
+	          <span></span>
+	          <span></span>
+	          <span></span>
+	          <span></span>
+	          <span></span>
+	          <span></span>
+	          <span></span>
+	          <span></span>
+	        </div>
+  		</div>
         <a href="mailto:yashguptaofficial@gmail.com"
-          ><div id="email">
+          ><div id="email" class="rellax" data-rellax-speed="3">
             <i class="far fa-envelope"></i>
             <p>yashguptaofficial@gmail.com</p>
           </div></a
         >
       </div>
       <div id="about">
-        <h1 class="rotate">Web Developer</h1>
-        <div id="about-3"><img src="me.png" /></div>
+        <div class="rellax" data-rellax-speed="2">
+          <h1 class="rotate"  id="up"><span class=" text-spectrum--k">Web Developer</span></h1>
+        </div>
+        <div id="about-3" class="rellax" data-rellax-speed="-2"><img src="me.png" /></div>
         <div id="about-2">
           <h2>
             I master <span id="html">HTML</span>, <span id="CSS">CSS</span>,
@@ -95,7 +124,7 @@
           </h2>
           <br /><br />
           <h4>
-            Apart from Web Developement, I have experince in Graphic Designing.
+            Apart from Web Developement, I have experince with Graphic Designing.
           </h4>
           <br /><br /><br />
           <p>
@@ -109,8 +138,10 @@
         </div>
       </div>
       <div id="social">
-        <h1 class="rotate-sm">Social Media</h1>
-        <div id="social-middle">
+        <div class="rellax" data-rellax-speed="2">
+         <h1 class="rotate-sm"><span class="text-spectrum--y">Social Media</span></h1>
+       </div>
+        <div id="social-middle" class="rellax" data-rellax-speed="0">
           <a href="https://twitter.com/yashguptaz" target="blank"
             ><span class="social-el twitter"
               ><i class="fab fa-twitter"></i>&nbsp;&nbsp;&nbsp;
@@ -136,13 +167,14 @@
     </div>
     </svg>
     <script type="text/javascript" src="fade.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="jquery.min.js"></script>
     <script type="text/javascript" src="smooth.js"></script>
     <script type="text/javascript" src="scroll.js"></script>
+    <script type="text/javascript" src="up.js"></script>
+    <script type="text/javascript" src="rellax.min.js"></script>
     <script>
-      $(document).ready(function() {
-        $('.container').stickem();
-      });
+      // Accepts any class name
+      var rellax = new Rellax('.rellax');
     </script>
   </body>
 </html>

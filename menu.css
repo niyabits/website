@@ -1,15 +1,16 @@
 @media only screen and (max-width: 768px) {
   .menu-wrap {
+    position: relative;
     top: 0;
     left: 0;
-    z-index: 999;
+    z-index: 10;
   }
 
   .menu-wrap .toggler {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 2;
+    z-index: 999;
     cursor: pointer;
     width: 50px;
     height: 50px;
@@ -24,7 +25,6 @@
     width: 60px;
     height: 60px;
     padding: 1rem;
-    background: var(--primary--color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -103,13 +103,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 998;
   }
 
   .menu-wrap .menu > div {
+    position: relative;
     background: var(--overlay-color);
     border-radius: 100%;
-    width: 200vw;
-    height: 200vw;
+    width: 400vw;
+    height: 400vw;
     display: flex;
     flex: none;
     align-items: center;
